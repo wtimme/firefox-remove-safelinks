@@ -1,0 +1,16 @@
+{
+  "description": "Disables Microsoft SafeLink protection by redirecting to the original URL instead of going through Microsoft",
+  "manifest_version": 2,
+  "name": "disable-safelinks",
+  "version": "1.0",
+
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
