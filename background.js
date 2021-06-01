@@ -1,4 +1,4 @@
-function logURL(requestDetails) {
+function removeSafelink(requestDetails) {
   if (requestDetails.url.includes('safelinks.protection.outlook.com/')) {
     var originalURL = getParameterByName('url', requestDetails.url);
 
@@ -9,7 +9,7 @@ function logURL(requestDetails) {
 }
 
 browser.webRequest.onBeforeRequest.addListener(
-  logURL,
+  removeSafelink,
   {urls: ["<all_urls>"]},
   ['blocking']
 );
