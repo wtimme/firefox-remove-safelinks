@@ -23,5 +23,10 @@ your data to Microsoft, it directly opens the original URL.
 - [x] **instructions for building your add-on code or details of any scripts provided:** n/a
 - [x] **Does your package include your build script?** I do not have a build script. The instructions on how to build are part of this README.
 
+## License
+
+This addon is published under the [Mozilla Public License, version 2.0][license].
+
 [safe-link]: https://docs.microsoft.com/en-us/microsoft-365/business-video/safe-links?view=o365-worldwide
 [web-ext]: https://github.com/mozilla/web-ext
+[license]: https://www.mozilla.org/en-US/MPL/2.0/
