@@ -1,0 +1,49 @@
+<html>
+
+<head>
+  <title>Test page for this add-on</title>
+</head>
+
+<body>
+  <h1>Test page for the "Disable Microsoft Safe Links" addon</h1>
+
+  <p>Below, you'll find links that look like the ones that are "protected" by Microsoft Safe Link.</p>
+
+  <h3>How to debug</h3>
+  <p>Use Firefox' debugging feature</a> for add-ons to verify that the links were indeed detected and blocked.</p>
+
+  <ol>
+    <li>Visit <code>about:debugging#/runtime/this-firefox</code></li>
+    <li>Click "Load Temporary Add-on..."</li>
+    <li>Select the <code>manifest.json</code> file this repository</li>
+    <li>Click the "Inspect" button</li>
+    <li>In the Developer Tools window, click on "Console"</li>
+  </ol>
+
+  <p>When a Safe Link redirect was blocked, a debug message is logged to the console.</p>
+
+  <h3>Example links</h3>
+
+  <p>The URL that is redirected to is https://example.com.</p>
+
+  <ul>
+    <li>
+      <a href="https://safelinks.protection.outlook.com/?url=https%3A%2F%2Fexample.com">
+        https://safelinks.protection.outlook.com/?url=https%3A%2F%2Fexample.com
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html?url=https%3A%2F%2Fexample.com">
+        https://statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html?url=https%3A%2F%2Fexample.com
+      </a>
+    </li>
+    <li>
+      <a href="https://outlook.office.com/mail/safelink.html?url=https%3A%2F%2Fexample.com">
+        https://outlook.office.com/mail/safelink.html?url=https%3A%2F%2Fexample.com
+      </a>
+    </li>
+  </ul>
+</body>
+
+</html>
