@@ -4,6 +4,8 @@ function removeSafelink(requestDetails) {
     requestDetails.url.includes('outlook.office.com/mail/safelink.html')) {
     var originalURL = getParameterByName('url', requestDetails.url);
 
+    console.debug('Blocked a "Microsoft Safe Link" redirect.')
+
     return {
       redirectUrl: originalURL
     };
