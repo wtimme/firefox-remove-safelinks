@@ -7,6 +7,11 @@ Microsoft's servers. I consider this an invasion of my privacy.
 The Firefox addon detects when you open a "Safe Link" and, instead of sending
 your data to Microsoft, it directly opens the original URL.
 
+## How to test the addon
+
+After cloning the repository, you can use the `test-page.html` file for testing the add-on.
+The page contains easy-to-follow steps on how to debug the redirects.
+
 ## How to package the addon
 
 1. Install `web-ext` (see [their GitHub README][web-ext])
