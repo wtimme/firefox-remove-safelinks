@@ -28,6 +28,12 @@ The page contains easy-to-follow steps on how to debug the redirects.
 - [x] **instructions for building your add-on code or details of any scripts provided:** n/a
 - [x] **Does your package include your build script?** I do not have a build script. The instructions on how to build are part of this README.
 
+## Attributions
+
+The icon is taken from the [Google Material Design iconset](https://fonts.google.com/icons),
+and is used under the terms of the
+[Creative Commons Attribution-ShareAlike](https://creativecommons.org/licenses/by-sa/3.0/) license.
+
 ## License
 
 This addon is published under the [Mozilla Public License, version 2.0][license].
