@@ -1,6 +1,7 @@
 function removeSafelink(requestDetails) {
   if (requestDetails.url.includes('safelinks.protection.outlook.com/') ||
-    requestDetails.url.includes('statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html')) {
+    requestDetails.url.includes('statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html') ||
+    requestDetails.url.includes('outlook.office.com/mail/safelink.html')) {
     var originalURL = getParameterByName('url', requestDetails.url);
 
     return {
