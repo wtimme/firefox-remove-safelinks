@@ -9,6 +9,11 @@
     "webRequestBlocking",
     "<all_urls>"
   ],
+  "icons": {
+    "48": "icons/48x48.png",
+    "96": "icons/96x96.png",
+    "512": "icons/512x512.png"
+  },
   "background": {
     "scripts": [
       "background.js"
