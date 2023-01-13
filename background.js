@@ -10,7 +10,13 @@ function removeSafelink(requestDetails) {
 
 browser.webRequest.onBeforeRequest.addListener(
   removeSafelink,
-  { urls: ["https://statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html*", "https://safelinks.protection.outlook.com/*", "https://outlook.office.com/mail/safelink.html*"] },
+  {
+    urls: [
+      "https://statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html*",
+      "https://safelinks.protection.outlook.com/*",
+      "https://outlook.office.com/mail/safelink.html*",
+    ]
+  },
   ['blocking']
 );
 
