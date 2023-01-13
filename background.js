@@ -1,20 +1,16 @@
 function removeSafelink(requestDetails) {
-  if (requestDetails.url.includes('safelinks.protection.outlook.com/') ||
-    requestDetails.url.includes('statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html') ||
-    requestDetails.url.includes('outlook.office.com/mail/safelink.html')) {
-    var originalURL = getParameterByName('url', requestDetails.url);
+  var originalURL = getParameterByName('url', requestDetails.url);
 
-    console.debug('Blocked a "Microsoft Safe Link" redirect.')
+  console.debug('Blocked a "Microsoft Safe Link" redirect.')
 
-    return {
-      redirectUrl: originalURL
-    };
-  }
+  return {
+    redirectUrl: originalURL
+  };
 }
 
 browser.webRequest.onBeforeRequest.addListener(
   removeSafelink,
-  { urls: ["<all_urls>"] },
+  { urls: ["https://statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html*", "https://safelinks.protection.outlook.com/*", "https://outlook.office.com/mail/safelink.html*"] },
   ['blocking']
 );
 
