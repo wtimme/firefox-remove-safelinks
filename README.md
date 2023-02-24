@@ -7,6 +7,12 @@ Microsoft's servers. I consider this an invasion of my privacy.
 The Firefox addon detects when you open a "Safe Link" and, instead of sending
 your data to Microsoft, it directly opens the original URL.
 
+<p align="center" style="font-size:20px">
+  <a href="https://addons.mozilla.org/en-US/firefox/addon/disable-microsoft-safe-links/" target="_blank">
+    View on the 🦊 Firefox extension directory
+  </a>
+</p>
+
 ## How to test the addon
 
 After cloning the repository, you can use the `test-page.html` file for testing the add-on.
