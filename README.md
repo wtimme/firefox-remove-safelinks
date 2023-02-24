@@ -1,4 +1,4 @@
-# Remove Microsoft Safe Links
+# Disable Microsoft Safe Links
 
 When enabled, "Microsoft Defender for Office 365" uses a feature called
 ["Safe Link"][safe-link] to replace links in emails with URLs that go through
