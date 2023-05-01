@@ -1,0 +1,17 @@
+{
+  "name": "firefox-remove-safelinks",
+  "version": "1.6.0",
+  "description": "Firefox addon that detects when you open a \"Microsoft Safe Link\" and, instead of sending your data to Microsoft, it directly opens the original URL.",
+  "main": "background.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wtimme/firefox-remove-safelinks.git"
+  },
+  "author": "wtimme <wtimme@users.noreply.github.com>",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/wtimme/firefox-remove-safelinks/issues"
+  },
+  "homepage": "https://github.com/wtimme/firefox-remove-safelinks#readme"
+}
