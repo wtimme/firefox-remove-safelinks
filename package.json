@@ -13,5 +13,8 @@
   "bugs": {
     "url": "https://github.com/wtimme/firefox-remove-safelinks/issues"
   },
-  "homepage": "https://github.com/wtimme/firefox-remove-safelinks#readme"
+  "homepage": "https://github.com/wtimme/firefox-remove-safelinks#readme",
+  "devDependencies": {
+    "webextension-polyfill": "^0.10.0"
+  }
 }
