@@ -21,15 +21,7 @@ The page contains easy-to-follow steps on how to debug the redirects.
 ## How to package the addon
 
 1. Install `web-ext` (see [their GitHub README][web-ext])
-2. From your checkout, run the following:
-  
-  ```bash
-  web-ext build --ignore-files \
-    "icons/*.sh" \
-    "icons/*.svg" \
-    "test-page.html" \
-    "CHANGELOG.md"
-  ```
+2. From your checkout, run `./build.sh`
 
 ## Source code checklist (Firefox addon review)
 
