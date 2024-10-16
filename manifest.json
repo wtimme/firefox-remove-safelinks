@@ -5,6 +5,7 @@
   "version": "1.6.0",
   "homepage_url": "https://github.com/wtimme/firefox-remove-safelinks",
   "permissions": [
+    "storage",
     "webRequest",
     "webRequestBlocking"
   ],
@@ -24,5 +25,8 @@
     "scripts": [
       "background.js"
     ]
+  },
+  "options_ui": {
+    "page": "options/options.html"
   }
 }
