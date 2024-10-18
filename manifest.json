@@ -5,9 +5,9 @@
   "version": "1.6.0",
   "homepage_url": "https://github.com/wtimme/firefox-remove-safelinks",
   "permissions": [
+    "storage",
     "webRequest",
     "webRequestBlocking",
-    "storage",
     "https://statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html*",
     "https://safelinks.protection.outlook.com/*",
     "https://*.safelinks.protection.outlook.com/*",
