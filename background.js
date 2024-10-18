@@ -18,13 +18,12 @@ function removeSafelink(requestDetails) {
 
   console.debug('Blocked a "Microsoft Safe Link" redirect.')
 
-  if ( allowedHosts.length == 0 || allowedHosts[0] == "" || allowedHosts.find((element) => originalURL.startsWith(element)) ) {
+  if (allowedHosts.length == 0 || allowedHosts[0] == "" || allowedHosts.find((element) => originalURL.startsWith(element))) {
     return {
       redirectUrl: originalURL
     };
-  }
-  else {
-    return ;
+  } else {
+    return;
   }
 }
 
