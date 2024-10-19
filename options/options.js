@@ -19,12 +19,8 @@ function updateUI(restoredSettings) {
   allowedHostsTextArea.value = restoredSettings.allowedHosts.join("\n");
 }
 
-function onError(e) {
-  console.error(e);
-}
-
 // On opening the options page, fetch stored settings and update the UI with them.
-browser.storage.local.get().then(updateUI, onError);
+browser.storage.local.get().then(updateUI, console.error);
 
 // Whenever the contents of the textarea changes, save the new values
 allowedHostsTextArea.addEventListener("change", storeSettings);
