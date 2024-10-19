@@ -9,8 +9,20 @@
   <body>
 
     <section>
-      <span class="title">Allowed sites</span>
+      <h1>Explicitly specify destinations</h1>
       <textarea id="allowed-hosts" rows="10" cols="50"></textarea>
+      <p>
+        By default, Microsoft Safe Links is disabled for <i>any</i> destination.
+        If you want to limit this, enter the start of URLs in the text area above.
+      </p>
+      <p>
+        For example, if you specify <code>https://github.com</code>, Microsoft Safe Links is
+        only disabled for URLs that start with <code>https://github.com</code>.
+      </p>
+      <p>
+        In order to disable Microsoft Safe Links for <i>any</i> destination,
+        keep the text area empty.
+      </p>
     </section>
 
     <script src="options.js"></script>
