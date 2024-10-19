@@ -16,9 +16,8 @@ browser.storage.onChanged.addListener(changeData => {
 function removeSafelink(requestDetails) {
   var originalURL = getParameterByName('url', requestDetails.url);
 
-  console.debug('Blocked a "Microsoft Safe Link" redirect.')
-
   if (allowedHosts.length == 0 || allowedHosts[0] == "" || allowedHosts.find((element) => originalURL?.startsWith(element))) {
+    console.debug('Blocked a "Microsoft Safe Link" redirect.')
     return {
       redirectUrl: originalURL
     };
