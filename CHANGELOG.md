@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.7.0] - 2024-10-19
+### Added
+- Added "allow list" option for limitting the add-on to user-configured URLs (@LukeCz)
+- Upgrade to Manifest v3 (@LukeCz)
+
 ## [1.6.0] - 2023-05-01
 ### Added
 - Support for office365.us Safe Link domains (e.g. "usg01.safelinks.protection.office365.us") (#8)
@@ -35,6 +40,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 The initial release 🎉
 
+[1.7.0]: https://github.com/wtimme/firefox-remove-safelinks/compare/1.6.0...1.7.0
 [1.6.0]: https://github.com/wtimme/firefox-remove-safelinks/compare/1.5.0...1.6.0
 [1.5.0]: https://github.com/wtimme/firefox-remove-safelinks/compare/1.4.0...1.5.0
 [1.4.0]: https://github.com/wtimme/firefox-remove-safelinks/compare/1.3.0...1.4.0
