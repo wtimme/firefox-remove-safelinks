@@ -2,9 +2,14 @@ const allowedHostsTextArea = document.querySelector("#allowed-hosts");
 
 // Store the currently selected settings using browser.storage.local.
 function storeSettings() {
-  let allowedHosts = allowedHostsTextArea.value.split("\n");
+  let allowedHosts = allowedHostsTextArea.value
+    .split("\n")
+    .filter(line => line.trim().length > 0)
+  
   browser.storage.local.set({
     allowedHosts
+  }).then(() => {
+    allowedHostsTextArea.value = allowedHosts.join("\n")
   });
 }
 
