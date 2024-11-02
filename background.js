@@ -8,14 +8,19 @@ function removeSafelink(requestDetails) {
   };
 }
 
-browser.permissions.getAll().then((p) => {
-  browser.webRequest.onBeforeRequest.addListener(
-    removeSafelink, {
-      urls: p.origins
-    },
-    ['blocking']
-  );
-});
+browser.webRequest.onBeforeRequest.addListener(
+  removeSafelink,
+  {
+    urls: [
+      "https://statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html*",
+      "https://safelinks.protection.outlook.com/*",
+      "https://*.safelinks.protection.outlook.com/*",
+      "https://outlook.office.com/mail/safelink.html*",
+      "https://*.safelinks.protection.office365.us/*",
+    ]
+  },
+  ['blocking']
+);
 
 // Source: https://stackoverflow.com/a/901144
 function getParameterByName(name, url) {
