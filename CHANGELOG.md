@@ -6,6 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.8.0] - 2024-11-02
+Due to issues with the changes that have been introduced with 1.7.0 (see GitHub issues),
+I have decided to revert the corresponding changes for now, as our privacy
+is more important than the features that have been added.
+
+If you have experience with Firefox Add-On development (and especially Manifest V3 and
+background scripts), please do not hesitate to reach out and help on GitHub.
+
+Thanks in advance, and sorry for any inconvenience!
+
 ## [1.7.0] - 2024-10-19
 ### Added
 - Added "allow list" option for limitting the add-on to user-configured URLs (@LukeCz)
@@ -40,6 +50,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 The initial release 🎉
 
+[1.8.0]: https://github.com/wtimme/firefox-remove-safelinks/compare/1.7.0...1.8.0
 [1.7.0]: https://github.com/wtimme/firefox-remove-safelinks/compare/1.6.0...1.7.0
 [1.6.0]: https://github.com/wtimme/firefox-remove-safelinks/compare/1.5.0...1.6.0
 [1.5.0]: https://github.com/wtimme/firefox-remove-safelinks/compare/1.4.0...1.5.0
