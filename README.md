@@ -8,7 +8,7 @@ The Firefox addon detects when you open a "Safe Link" and, instead of sending
 your data to Microsoft, it directly opens the original URL.
 
 <p align="center" style="font-size:20px">
-  <a href="https://addons.mozilla.org/en-US/firefox/addon/disable-microsoft-safe-links/" target="_blank">
+  <a href="https://addons.mozilla.org/firefox/addon/disable-microsoft-safe-links/" target="_blank">
     View on the 🦊 Firefox extension directory
   </a>
 </p>
@@ -52,6 +52,6 @@ and is used under the terms of the
 
 This addon is published under the [Mozilla Public License, version 2.0][license].
 
-[safe-link]: https://docs.microsoft.com/en-us/microsoft-365/business-video/safe-links?view=o365-worldwide
+[safe-link]: https://docs.microsoft.com/microsoft-365/business-video/safe-links?view=o365-worldwide
 [web-ext]: https://github.com/mozilla/web-ext
-[license]: https://www.mozilla.org/en-US/MPL/2.0/
+[license]: https://www.mozilla.org/MPL/2.0/
