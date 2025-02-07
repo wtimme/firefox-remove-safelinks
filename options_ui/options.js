@@ -24,6 +24,7 @@
       browser.storage.local.set({
         urlPatterns: event.target.value.trim()
       })
+      updateUI()
     })
   }
 
@@ -33,6 +34,7 @@
       urlPatterns: '',
     })
     let selectedScope = storedPreferences.disableScope
+    let urlPatterns = storedPreferences.urlPatterns
 
     // Show/hide the textarea
     let settings = document.querySelector('#disable-scope .addon-detail-settings')
@@ -45,6 +47,11 @@
     // Set the textarea's content
     let textarea = document.querySelector('#disable-scope textarea')
     textarea.value = storedPreferences.urlPatterns
+
+    // Resize the textarea so that all URLs are visible
+    let minimumNumberOfRows = 10
+    let numberOfURLPatterns = urlPatterns.split('\n').length
+    textarea.setAttribute('rows', Math.max(minimumNumberOfRows, numberOfURLPatterns))
   }
 
   await updateUI()
