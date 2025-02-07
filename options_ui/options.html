@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="firefox.css">
+  <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+  <div id="disable-scope">
+    <div class="addon-detail-row addon-detail-row-has-help">
+      <span>Disable Safe Links for</span>
+
+      <div class="addon-detail-actions">
+        <label class="radio-container-with-text">
+          <input type="radio" name="disable-scope" value="all-sites">
+          <span>All Sites</span>
+        </label>
+        <label class="radio-container-with-text">
+          <input type="radio" name="disable-scope" value="specific-sites">
+          <span>Specific Sites</span>
+        </label>
+      </div>
+    </div>
+    <div class="addon-detail-settings">
+      <textarea placeholder="https://example.com/*" rows="10"></textarea>
+    </div>
+    <div class="addon-detail-row addon-detail-help-row">
+      <span>
+        Safe Links can be disabled for all URLs, or only for the ones you specify. Uses
+        JavaScript regular expressions.
+      </span>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions" target="_blank">
+        Learn more
+      </a>
+    </div>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+
+</html>

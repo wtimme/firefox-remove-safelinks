@@ -1,0 +1,14 @@
+/**
+    This stylesheet contains styles for custom UI of the add-on's options.
+ */
+.addon-detail-settings {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.addon-detail-settings textarea {
+    width: 100%;
+    resize: vertical;
+    font-family: inherit;
+    font-size: 14px;
+}

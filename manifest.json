@@ -5,6 +5,7 @@
   "version": "1.8.0",
   "homepage_url": "https://github.com/wtimme/firefox-remove-safelinks",
   "permissions": [
+    "storage",
     "webRequest",
     "webRequestBlocking",
     "https://statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html*",
@@ -28,5 +29,8 @@
     "gecko": {
       "id": "{1504020f-b7d9-4f7f-b13e-10f7bb164abb}"
     }
+  },
+  "options_ui": {
+    "page": "options_ui/options.html"
   }
 }

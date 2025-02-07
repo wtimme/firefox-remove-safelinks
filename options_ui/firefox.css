@@ -1,0 +1,85 @@
+/**
+    This stylesheet contains styles that make the add-on's options appear
+    like the ones built-in to Firefox.
+ */
+:root {
+    color-scheme: light dark;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-size: 15px;
+    padding-top: 12px;
+}
+
+a,
+a:visited {
+    color: rgb(0, 96, 223);
+}
+
+a:hover {
+    color: #0250bb;
+}
+
+input:where([type="checkbox"], [type="radio"]) {
+    accent-color: rgb(0, 96, 223);
+    height: 16px;
+    width: 16px;
+    margin-block: calc(0.5 * 0.267rem);
+    margin-inline: calc(0.5 * 0.267rem);
+}
+
+.addon-detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #d7d7db;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.addon-detail-row.addon-detail-row-has-help {
+    padding-bottom: 0;
+}
+
+.addon-detail-help-row {
+    border: 0;
+    padding-top: 4px;
+    display: block;
+}
+
+.addon-detail-actions {
+    gap: 20px;
+    display: flex;
+}
+
+.addon-detail-actions label {
+    flex-wrap: wrap;
+}
+
+.addon-detail-help-row span {
+    opacity: 0.50;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #23222b;
+    }
+
+    a,
+    a:visited {
+        color: #00ddff;
+    }
+
+    a:hover {
+        color: #80ebff;
+    }
+
+    input:where([type="checkbox"], [type="radio"]) {
+        accent-color: rgb(0, 221, 255);
+    }
+
+    .addon-detail-row {
+        border-color: rgba(249, 249, 250, 0.2);
+    }
+}
