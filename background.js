@@ -1,11 +1,53 @@
-function removeSafelink(requestDetails) {
-  var originalURL = getParameterByName('url', requestDetails.url);
+async function removeSafelink(requestDetails) {
+  let safeLinkURL = requestDetails.url
+  let originalURL = getParameterByName('url', safeLinkURL);
+  let blockSafeLink = await isSafeLinksSupposedToBeDisabledForURL(originalURL)
 
-  console.debug('Blocked a "Microsoft Safe Link" redirect.')
+  if (blockSafeLink) {
+    console.debug('Blocked a "Microsoft Safe Link" redirect.')
 
-  return {
-    redirectUrl: originalURL
-  };
+    return {
+      redirectUrl: originalURL
+    };
+  } else {
+    console.debug('"Microsoft Safe Link" detected, but not blocked.')
+
+    return {}
+  }
+}
+
+async function isSafeLinksSupposedToBeDisabledForURL(url) {
+  const scopeAllSites = 'all-sites'
+  const defaultScope = scopeAllSites
+
+  let storedPreferences = await browser.storage.local.get({
+    disableScope: defaultScope,
+    urlPatterns: '',
+  })
+  let selectedScope = storedPreferences.disableScope
+  let urlPatterns = storedPreferences.urlPatterns
+    .split('\n')
+    .filter(element => element.trim() !== '')
+
+  if (selectedScope == scopeAllSites) {
+    return true
+  }
+
+  let matchingPattern = urlPatterns.find(pattern => {
+    try {
+      let regularExpression = new RegExp(pattern)
+
+      if (regularExpression.test(url)) {
+        return true
+      }
+    } catch (error) {
+      console.error(`Failed to evaluate "${pattern}": Not a valid regular expression.`)
+    }
+
+    return false
+  })
+
+  return typeof matchingPattern !== 'undefined'
 }
 
 browser.webRequest.onBeforeRequest.addListener(
