@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.9.0] - 2024-02-07
+### Added
+- Added options UI for blocking URLs matching patterns instead of _all_ URLs (#18)
+
+## Changed
+- Migrated background script to be non-persistent (in preparation for Manifest V3)
+
 ## [1.8.0] - 2024-11-02
 Due to issues with the changes that have been introduced with 1.7.0 (see GitHub issues),
 I have decided to revert the corresponding changes for now, as our privacy
@@ -50,6 +57,7 @@ Thanks in advance, and sorry for any inconvenience!
 
 The initial release 🎉
 
+[1.9.0]: https://github.com/wtimme/firefox-remove-safelinks/compare/1.8.0...1.9.0
 [1.8.0]: https://github.com/wtimme/firefox-remove-safelinks/compare/1.7.0...1.8.0
 [1.7.0]: https://github.com/wtimme/firefox-remove-safelinks/compare/1.6.0...1.7.0
 [1.6.0]: https://github.com/wtimme/firefox-remove-safelinks/compare/1.5.0...1.6.0
