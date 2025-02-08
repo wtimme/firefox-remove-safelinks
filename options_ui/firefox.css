@@ -38,6 +38,11 @@ input:where([type="checkbox"], [type="radio"]) {
     padding-bottom: 16px;
 }
 
+.addon-detail-row.first {
+    border-top-width: 0px;
+    padding-top: 0px;
+}
+
 .addon-detail-row.addon-detail-row-has-help {
     padding-bottom: 0;
 }
