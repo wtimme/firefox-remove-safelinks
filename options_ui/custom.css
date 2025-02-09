@@ -6,9 +6,14 @@
     padding-bottom: 4px;
 }
 
-.addon-detail-settings textarea {
+.addon-detail-settings textarea,
+.addon-detail-settings input {
     width: 100%;
     resize: vertical;
     font-family: inherit;
     font-size: 14px;
+}
+
+.addon-detail-settings input {
+    margin-bottom: 8px;
 }
