@@ -21,6 +21,7 @@
   },
   "background": {
     "scripts": [
+      "shared/isSafeLinksSupposedToBeDisabledForURL.js",
       "background.js"
     ],
     "persistent": false
