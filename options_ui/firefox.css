@@ -53,6 +53,19 @@ input:where([type="checkbox"], [type="radio"]) {
     display: block;
 }
 
+.addon-detail-help-row ul {
+    margin: 4px;
+    padding-left: 12px;
+}
+
+.addon-detail-help-row code {
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 2px;
+    background-color: #d7d7db;
+    color: black;
+}
+
 .addon-detail-actions {
     gap: 20px;
     display: flex;
