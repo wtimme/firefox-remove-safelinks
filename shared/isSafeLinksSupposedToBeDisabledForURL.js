@@ -1,3 +1,21 @@
+function isURLMatchingPatterns(url, patterns) {
+  let matchingPattern = patterns.find(pattern => {
+    try {
+      let regularExpression = new RegExp(pattern)
+
+      if (regularExpression.test(url)) {
+        return true
+      }
+    } catch (error) {
+      console.error(`Failed to evaluate "${pattern}": Not a valid regular expression.`)
+    }
+
+    return false
+  })
+
+  return typeof matchingPattern !== 'undefined'
+}
+
 async function isSafeLinksSupposedToBeDisabledForURL(url) {
   const scopeAllSites = 'all-sites'
   const defaultScope = scopeAllSites
@@ -15,19 +33,5 @@ async function isSafeLinksSupposedToBeDisabledForURL(url) {
     return true
   }
 
-  let matchingPattern = urlPatterns.find(pattern => {
-    try {
-      let regularExpression = new RegExp(pattern)
-
-      if (regularExpression.test(url)) {
-        return true
-      }
-    } catch (error) {
-      console.error(`Failed to evaluate "${pattern}": Not a valid regular expression.`)
-    }
-
-    return false
-  })
-
-  return typeof matchingPattern !== 'undefined'
+  return isURLMatchingPatterns(url, urlPatterns)
 }
