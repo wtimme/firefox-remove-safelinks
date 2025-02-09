@@ -1,3 +1,9 @@
+function patternsFromString(multilineString) {
+  return multilineString
+    .split('\n')
+    .filter(element => element.trim() !== '')
+}
+
 function isURLMatchingPatterns(url, patterns) {
   let matchingPattern = patterns.find(pattern => {
     try {
@@ -25,9 +31,7 @@ async function isSafeLinksSupposedToBeDisabledForURL(url) {
     urlPatterns: '',
   })
   let selectedScope = storedPreferences.disableScope
-  let urlPatterns = storedPreferences.urlPatterns
-    .split('\n')
-    .filter(element => element.trim() !== '')
+  let urlPatterns = patternsFromString(storedPreferences.urlPatterns)
 
   if (selectedScope == scopeAllSites) {
     return true
