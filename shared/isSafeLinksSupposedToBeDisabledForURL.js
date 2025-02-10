@@ -4,7 +4,7 @@ function patternsFromString(multilineString) {
     .filter(element => element.trim() !== '')
 }
 
-function isURLMatchingPatterns(url, patterns) {
+function isURLMatchingPatterns(url, patterns, logErrors = true) {
   let matchingPattern = patterns.find(pattern => {
     try {
       let regularExpression = new RegExp(pattern)
@@ -13,7 +13,9 @@ function isURLMatchingPatterns(url, patterns) {
         return true
       }
     } catch (error) {
-      console.error(`Failed to evaluate "${pattern}": Not a valid regular expression.`)
+      if (logErrors) {
+        console.error(`Failed to evaluate "${pattern}": Not a valid regular expression.`)
+      }
     }
 
     return false

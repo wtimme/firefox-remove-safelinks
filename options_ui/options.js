@@ -48,7 +48,7 @@
   function updateVisibleMatchMessage() {
     let testURL = document.querySelector('#test-regular-expressions input').value.trim()
     let patterns = patternsFromString(document.querySelector('#disable-scope textarea').value)
-    let match = isURLMatchingPatterns(testURL, patterns)
+    let match = isURLMatchingPatterns(testURL, patterns, false)
 
     let matchElement = document.querySelector('#regular-expressions-match')
     let noMatchElement = document.querySelector('#regular-expressions-no-match')
