@@ -17,3 +17,7 @@
 .addon-detail-settings input {
     margin-bottom: 8px;
 }
+
+.addon-detail-row.example {
+    padding-bottom: 0px;
+}

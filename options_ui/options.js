@@ -75,6 +75,10 @@
     let settings = document.querySelector('#disable-scope .addon-detail-settings')
     settings.style.setProperty('display', selectedScope == scopeSpecificSites ? 'block' : 'none')
 
+    // Show/hide the example
+    let example = document.querySelector('#disable-scope .example')
+    example.style.setProperty('display', selectedScope == scopeSpecificSites ? 'block' : 'none')
+
     // Show/hide the "test regular expressions" section
     let testSection = document.querySelector('#test-regular-expressions')
     testSection.style.setProperty('display', selectedScope == scopeSpecificSites ? 'block' : 'none')
