@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.10.0] - 2024-02-12
+### Added
+- Added options UI for testing an URL against the regular expressions
+- Added example for regular expressions, in order to make it easier to get started
+
 ## [1.9.0] - 2024-02-07
 ### Added
 - Added options UI for blocking URLs matching patterns instead of _all_ URLs (#18)
