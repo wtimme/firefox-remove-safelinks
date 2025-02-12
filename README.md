@@ -13,6 +13,8 @@ your data to Microsoft, it directly opens the original URL.
   </a>
 </p>
 
+![Screenshot of the add-on's settings, showcasing the regular expressions](./screenshot.png)
+
 ## How to test the addon
 
 After cloning the repository, you can use the `test-page.html` file for testing the add-on.
