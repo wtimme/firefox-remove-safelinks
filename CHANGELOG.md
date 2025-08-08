@@ -62,6 +62,7 @@ Thanks in advance, and sorry for any inconvenience!
 
 The initial release 🎉
 
+[1.10.0]: https://github.com/wtimme/firefox-remove-safelinks/compare/1.9.0...1.10.0
 [1.9.0]: https://github.com/wtimme/firefox-remove-safelinks/compare/1.8.0...1.9.0
 [1.8.0]: https://github.com/wtimme/firefox-remove-safelinks/compare/1.7.0...1.8.0
 [1.7.0]: https://github.com/wtimme/firefox-remove-safelinks/compare/1.6.0...1.7.0
