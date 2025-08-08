@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.11.0] - 2025-08-08
+### Added
+- Added support for "https://statics.teams.cdn.office.net/evergreen-assets/safelinks/2/atp-safelinks.html" (#20)
+
 ## [1.10.0] - 2024-02-12
 ### Added
 - Added options UI for testing an URL against the regular expressions
@@ -62,6 +66,7 @@ Thanks in advance, and sorry for any inconvenience!
 
 The initial release 🎉
 
+[1.11.0]: https://github.com/wtimme/firefox-remove-safelinks/compare/1.10.0...1.11.0
 [1.10.0]: https://github.com/wtimme/firefox-remove-safelinks/compare/1.9.0...1.10.0
 [1.9.0]: https://github.com/wtimme/firefox-remove-safelinks/compare/1.8.0...1.9.0
 [1.8.0]: https://github.com/wtimme/firefox-remove-safelinks/compare/1.7.0...1.8.0
