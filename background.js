@@ -25,6 +25,7 @@ browser.webRequest.onBeforeRequest.addListener(
       "https://*.safelinks.protection.outlook.com/*",
       "https://outlook.office.com/mail/safelink.html*",
       "https://*.safelinks.protection.office365.us/*",
+      "https://teams.public.onecdn.static.microsoft/*",
     ]
   },
   ['blocking']

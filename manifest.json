@@ -12,7 +12,8 @@
     "https://safelinks.protection.outlook.com/*",
     "https://*.safelinks.protection.outlook.com/*",
     "https://outlook.office.com/mail/safelink.html*",
-    "https://*.safelinks.protection.office365.us/*"
+    "https://*.safelinks.protection.office365.us/*",
+    "https://teams.public.onecdn.static.microsoft/*"
   ],
   "icons": {
     "48": "icons/48x48.png",
