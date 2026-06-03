@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.12.0] - 2026-06-03
+### Added
+- Support for teams.public.onecdn.static.microsoft Safe Link domain
+
 ## [1.11.0] - 2025-08-08
 ### Added
 - Added support for "https://statics.teams.cdn.office.net/evergreen-assets/safelinks/2/atp-safelinks.html" (#20)
@@ -66,6 +70,7 @@ Thanks in advance, and sorry for any inconvenience!
 
 The initial release 🎉
 
+[1.12.0]: https://github.com/wtimme/firefox-remove-safelinks/compare/1.11.0...1.12.0
 [1.11.0]: https://github.com/wtimme/firefox-remove-safelinks/compare/1.10.0...1.11.0
 [1.10.0]: https://github.com/wtimme/firefox-remove-safelinks/compare/1.9.0...1.10.0
 [1.9.0]: https://github.com/wtimme/firefox-remove-safelinks/compare/1.8.0...1.9.0
