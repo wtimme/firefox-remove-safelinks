@@ -23,7 +23,7 @@ The page contains easy-to-follow steps on how to debug the redirects.
 ## How to package the addon
 
 1. Install `web-ext` (see [their GitHub README][web-ext])
-2. From your checkout, run the build script: `./build.sh`
+2. From your checkout, run: `web-ext build`
 
 ## Source code checklist (Firefox addon review)
 
