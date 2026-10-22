@@ -29,7 +29,7 @@ The page contains easy-to-follow steps on how to debug the redirects.
 
 - [x] **Did you use any build tools?** No.
 - [x] **Does your package include source code for any private repositories or frameworks used in your add-on?** All of the code is open source. It does not contain any frameworks.
-- [x] **Operation system used for the build:** macOS 11.1
+- [x] **Operation system used for the build:** Not OS-specific. `web-ext` runs on Node.js, so macOS, Linux, and Windows all work.
 - [x] **Details of any specific versions of tools or utilities needed:** There are none. A simple text editor will suffice.
 - [x] **Links to any tools or utilities that need to be downloaded:** n/a
 - [x] **Guidance for installing any downloaded tools and utilities, for example, links to online instructions:** n/a
