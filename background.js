@@ -1,6 +1,13 @@
 async function removeSafelink(requestDetails) {
   let safeLinkURL = requestDetails.url
   let originalURL = getParameterByName('url', safeLinkURL);
+
+  if (!originalURL) {
+    console.debug('"Microsoft Safe Link" detected, but no "url" parameter was found.')
+
+    return {}
+  }
+
   let blockSafeLink = await isSafeLinksSupposedToBeDisabledForURL(originalURL)
 
   if (blockSafeLink) {
